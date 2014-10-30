@@ -1,96 +1,107 @@
-body {
+/** Some hand-rolled css here... */
+html {
     font-family: 'Pontano Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #000;
     background: #fff;
     font-size: 12pt;
 }
+body {
+    max-width: 45em;
+    width: 100%;
+    margin: 0 auto;
+}
+
 h1,h2 {
     margin: 0;
     padding: 0
 }
+
 a {
     color: #FA0F14;
 }
+
 h1 {
-    font-size: 30pt;
+    font-size: 28.9pt;
     margin-top: -0.2em;
     margin-bottom: 0.5em;
 }
+
 h2 {
     font-size: 15pt;
     text-align: center;
 }
+
 p {
     margin: 0.6em 0;
 }
+
 h1,h2 {
     font-weight:normal;
     letter-spacing: 0.1em;
 }
-#content1 {
-    margin: 1em auto 6em auto;
+
+#content {
+    position: relative;
+    padding: 8em;
 }
-#content1,#content2,#content3 {
-    width: 40em;
-    padding: 1em;
+
+#box1,#box2,#box3 {
+    z-index: -1;
+    font-size: 12pt;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
     border: solid 1em;
     border-radius: 2em;
 }
-#content1 {
+
+#box1 {
     border-color: rgba(238, 198, 135, 0.40);
     border-top-left-radius: 6em;
+    margin: 1em 5em 5em 1em;
 }
-#content2 {
+
+#box2 {
     border-color: rgba(54, 53, 255, 0.4);
-    margin-bottom:-4em;
     border-top-left-radius: 4em;
     border-bottom-right-radius: 4em;
+    margin: 3em;
 }
-#content3 {
-    width: 36em;
+
+#box3 {
     border-color: rgba(250, 15, 20, 0.4);
-    margin-bottom:-4em;
     border-bottom-right-radius: 6em;
-    padding-right: 5em;
-    padding-bottom: 4em;
+    margin: 5em 1em 1em 5em;
 }
+
 span.time {
     color: #485277;
     font-size: 80%;
     letter-spacing: 0.05em;
+    white-space: nowrap;
 }
+
 ul {
     margin: 1em 0;
     padding: 0;
 }
+
 li {
     list-style: none;
     padding-bottom: 0.5em;
 }
-@media handheld, only screen and (max-device-width: 480px) {
+
+@media screen and (max-width: 500px) {
     h1 {
         font-size: 20pt;
     }
-    #content1,#content2,#content3 {
-        width: 15em;
-        padding: 0.5em;
-        border-width: 0.5em;
-        border-radius: 1em;
+    #box1,#box2,#box3 {
+        font-size: 6pt;
     }
-    #content1 {
-        margin: 0 0 3em;
-        border-top-left-radius: 3em;
-    }
-    #content2 {
-        margin-bottom:-2em;
-        border-top-left-radius: 2em;
-        border-bottom-right-radius: 2em;
-    }
-    #content3 {
-        width: 12.5em;
-        margin-bottom:-2em;
-        border-bottom-right-radius: 3em;
-        padding-right: 3em;
-        padding-bottom: 2em;
+    #content {
+        padding: 4em;
     }
 }
