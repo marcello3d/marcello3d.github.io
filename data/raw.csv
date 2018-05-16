@@ -1,0 +1,77 @@
+Name,Type,Start,End,Place,Tech Used
+Alt Framework,library,2006,2009,,"php, java, rhino"
+click* extensions,library,1997-12,2002-06,cellosoft,c++
+jsgen,library,2003-12,2004-01,,"spidermonkey,c++"
+JTablet,library,2002,2012,2draw,"java, c++, jni"
+Mode7 Ex,library,2000,2002-06,cellosoft,c++
+Mongolian Deadbeef,library,2011,2012,,node.js
+2draw,place,2002-03,present,,
+Apple,place,2010-04,2013-01,,
+cellosoft,place,1996,present,,
+Samsung,place,2016-10,2018-03,,
+Siri,place,2008-09,2010-04,,
+Stanford,place,2006-09,2008-06,,
+UNM,place,2001-08,2006-05,,
+Viv Labs,place,2013-01,2018-03,,
+YRB,place,2007-06,2007-09,,
+2draw (scala),project,2010-10,2011-02,2draw,"java, scala, play framework"
+2draw book,project,2007-10,2008-12,2draw,indesign
+2draw.net,project,2002-04,2008,2draw,"php, mysql, java applets"
+2draw.tv (mobile),project,2015-08,2017-12,2draw,"parse, firebase"
+2draw.tv (node),project,2011-02,2015-08,2draw,"node, mongo, parse, socket.io, engine.io"
+cellosoft.com,project,1999,2002,cellosoft,"php, mysql"
+Firestarter,project,2005-08,2005-08,cellosoft,"allegro, c++"
+Lascaux Sketch,project,2002-06,2008,2draw,"java, java applets"
+Lascaux 2,project,2008-01,2009-08,2draw,"java, java2d, java applets"
+Siri,project,2008-09,2013-01,siri,"php, java, javascript, objective-c, "
+Troll Hunter,project,2005-02,2005-02,cellosoft,"allegro, c++"
+Viv,project,2013-01,2018-03,viv labs,"node.js, java, react, rhino"
+Allegro,tech,2001,2007,,
+Android Development,tech,2009-11,2010-04,,
+c++,tech,2001,2008,,
+click and create,tech,1996,1998,,
+Electron,tech,2016-07,2017-12,,
+engine.io,tech,2013-01,2015,,
+Firebase,tech,2016-02,2017-11,,
+Flex,tech,2007,2007,,
+GL Shader Language,tech,2015-12,2016-04,,
+gRPC,tech,2017-10,2018-03,,
+HTML,tech,1996,present,,
+iOS Development,tech,2009-11,2013-01,,
+Java,tech,2000,2017,,
+Java Applets,tech,2000,2008,,
+JavaScript,tech,1996,present,,
+Jest,tech,2016-08,present,,
+klik & play,tech,1995-12,1996,,
+Metalsmith,tech,2017-02,2017-05,,
+MongoDB,tech,2010-11,2012,,
+multimedia fusion,tech,1998,2001,,
+MySQL,tech,1999,2006,,
+Next.js,tech,2017-06,present,,
+Node.js,tech,2010?,present,,
+OpenGL,tech,2005,2008,,
+Parse,tech,2015-11,2016-02,,
+Perl,tech,1998?,1998?,,
+PHP,tech,1999,2008,,
+Play framework,tech,2010-10,2011-02,,
+Postgres,tech,2014-11,2015,,
+Processing (java),tech,2004,2006,,
+React,tech,2015-02,present,,
+React Native,tech,2015-09,present,,
+Redux,tech,July 2016,present,,
+Rhino,tech,2006,2016,,
+Scala,tech,2010-10,2011-02,,
+socket.io,tech,2011-02,2013-01,,
+Spidermonkey (c++),tech,2004,2004,,
+WebGL,tech,2015-12,2016-04,,
+After Effects,tool,2002,2004,,
+Fireworks,tool,1999?,2003?,,
+Flash,tool,2007?,2007?,,
+iPhone,tool,2008-09,present,,
+Lightroom,tool,2008,2015,,
+Mac OS,tool,2007,present,,
+Maya,tool,2002,2004,,
+Photoshop,tool,2001,2015,,
+Sketch,tool,2014?,2017,,
+Windows,tool,1995,2008,,
+InDesign,tool,2007,2008-12,,

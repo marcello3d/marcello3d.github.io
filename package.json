@@ -1,0 +1,33 @@
+{
+  "name": "marcello.cellosoft.com",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:marcello3d/marcello3d.github.io.git",
+  "author": "Marcello Bastea-Forte <marcello@cellosoft.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fortawesome/fontawesome": "1.1.8",
+    "@fortawesome/fontawesome-free-brands": "5.0.13",
+    "@fortawesome/fontawesome-pro-light": "5.0.13",
+    "@fortawesome/fontawesome-pro-regular": "5.0.13",
+    "@fortawesome/fontawesome-pro-solid": "5.0.13",
+    "@fortawesome/react-fontawesome": "0.0.20",
+    "next": "6.0.2",
+    "react": "16.3.2",
+    "react-dom": "16.3.2"
+  },
+  "scripts": {
+    "process-data": "node --require babel-register data/raw-csv-to-json",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "csv-parse": "2.4.0",
+    "js-yaml": "3.11.0",
+    "json-loader": "0.5.7",
+    "prettier": "1.12.1",
+    "yaml-loader": "0.5.0"
+  }
+}
