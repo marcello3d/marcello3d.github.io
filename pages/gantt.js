@@ -1,5 +1,5 @@
 import data from '../data/data.yaml'
-import FAIcon from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon }from '@fortawesome/react-fontawesome'
 
 import faPalette from '@fortawesome/fontawesome-pro-solid/faPalette'
 import faFilm from '@fortawesome/fontawesome-pro-solid/faFilm'
@@ -44,9 +44,9 @@ function getTechnology(id, orDefault = { name: id }) {
 
 for (const project of Object.values(data.projects)) {
   const { date, place, tech } = project
-  const [startDate, endDate] = date.split(/\s*-\s*|\sto\s|,/)
+  const [startDate, endDate] = String(date).split(/\s*-\s*|\sto\s|,/)
   const start = parseDate(startDate)
-  const end = parseDate(endDate)
+  const end = endDate ? parseDate(endDate) : start
   if (start.year < minYear) {
     minYear = start.year
   }
@@ -125,6 +125,7 @@ function Project({
   status,
   type,
   date,
+  url,
   startDate,
   endDate,
   place,
@@ -144,6 +145,10 @@ function Project({
           background: #adb8d4;
           border-radius: 4px;
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project .name a {
+          color: #000;
         }
 
         .content {
@@ -170,12 +175,11 @@ function Project({
         }
 
         .film {
-          background: #555;
-          color: #fff;
+          background: #c3c3c3;
         }
 
         .design {
-          background: #ca1b5a;
+          background: #e34e85;
         }
 
         .web {
@@ -183,11 +187,11 @@ function Project({
         }
 
         .game {
-          background: #b14bff;
+          background: #d597ff;
         }
 
         .library {
-          background: #0da858;
+          background: #4dd188;
         }
 
         .app {
@@ -195,15 +199,14 @@ function Project({
         }
 
         .mobile {
-          background: #4056ff;
-          color: #fff;
+          background: #99aeff;
         }
       `}</style>
       <div className="date">
-        <FAIcon icon={getIcon(type)} /> {formatDates(startDate, endDate)}
+        <FontAwesomeIcon icon={getIcon(type)} /> {formatDates(startDate, endDate)}
       </div>
       <div className="header">
-        <strong className="name">{name}</strong>
+        <strong className="name">{ url ? <a href={url}>{name}</a> : name}</strong>
         {place && ` @ ${getPlace(place).name}`}
       </div>
       {status !== 'released' && (

@@ -9,25 +9,27 @@
   "dependencies": {
     "@fortawesome/fontawesome": "1.1.8",
     "@fortawesome/fontawesome-free-brands": "5.0.13",
+    "@fortawesome/fontawesome-pro": "5.1.0-4",
     "@fortawesome/fontawesome-pro-light": "5.0.13",
     "@fortawesome/fontawesome-pro-regular": "5.0.13",
     "@fortawesome/fontawesome-pro-solid": "5.0.13",
-    "@fortawesome/react-fontawesome": "0.0.20",
-    "next": "6.0.2",
-    "react": "16.3.2",
-    "react-dom": "16.3.2"
+    "@fortawesome/fontawesome-svg-core": "1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "next": "6.0.3",
+    "react": "16.4.1",
+    "react-dom": "16.4.1"
   },
   "scripts": {
-    "process-data": "node --require babel-register data/raw-csv-to-json",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "start": "next",
+    "export": "rm -rf out && next build && next export"
   },
   "devDependencies": {
-    "csv-parse": "2.4.0",
-    "js-yaml": "3.11.0",
+    "csv-parse": "2.5.0",
+    "js-yaml": "3.12.0",
     "json-loader": "0.5.7",
-    "prettier": "1.12.1",
+    "prettier": "1.13.5",
+    "serve": "9.1.0",
     "yaml-loader": "0.5.0"
   }
 }

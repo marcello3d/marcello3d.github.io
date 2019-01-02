@@ -6,6 +6,8 @@ technologies:
   android:
     name: Android
     date: 2009.11 to 2010.04
+  arkit:
+    name: ARKit
   cpp:
     name: C++
     date: 2001 to 2008
@@ -14,7 +16,7 @@ technologies:
     date: 1996 to 1998
   electron:
     name: Electron
-    date: 2016.07 to 2017.12
+    date: 2016.07 to present
   engineio:
     name: engine.io
     date: 2013.01 to 2015
@@ -92,6 +94,9 @@ technologies:
   playframework:
     name: Play framework
     date: 2010.10 to 2011.02
+  pocketpc:
+    name: PocketPC
+    date: 2003.01 to 2003.12
   postgres:
     name: Postgres
     date: 2014.11 to 2015
@@ -103,7 +108,7 @@ technologies:
     date: 2015.02 to present
   reactnative:
     name: React Native
-    date: 2015.09 to present
+    date: 2015.09 to 2018.06
   redux:
     name: Redux
     date: July 2016 to present
@@ -119,6 +124,13 @@ technologies:
   spidermonkey:
     name: SpiderMonkey
     date: 2004 to 2004
+  sqlite:
+    name: SQLite
+  swift:
+    name: Swift
+  typescript:
+    name: TypeScript
+    date: 2017.08 to present
   webgl:
     name: WebGL
     date: 2015.12 to 2016.04
@@ -133,7 +145,7 @@ technologies:
     date: 2007? to 2007?
   iphone:
     name: iPhone
-    date: 2008.09 to present
+    date: 2008.09 to 2018.09
   lightroom:
     name: Lightroom
     date: 2008 to 2015
@@ -165,6 +177,9 @@ places:
   cellosoft:
     name: cellosoft
     date: 1996 to present
+  descript:
+    name: Descript Inc
+    date: 2018.09 to present
   samsung:
     name: Samsung
     date: 2016.10 to 2018.03
@@ -198,6 +213,7 @@ projects:
     type: design
     status: released Oct 2008
     date: 2007.10 to 2008.12
+    url: http://www.blurb.com/b/428407-2draw-digital-art-showcase
     tech:
       - indesign
   2draw:
@@ -205,6 +221,7 @@ projects:
     type: web
     status: launched Apr 2002
     date: 2002.03 to 2002.11
+    url: https://web.archive.org/web/20021201144836/http://cellosoft.com:80/2draw/
     tech:
       - php
       - mysql
@@ -213,6 +230,7 @@ projects:
     name: 2draw.net (2.0)
     type: web
     status: launched Aug 2003
+    url: https://web.archive.org/web/20041204052224/http://cellosoft.com:80/2draw/
     date: 2002.12 to 2006.06
     tech:
       - php
@@ -223,6 +241,7 @@ projects:
     type: web
     status: released Apr 2008
     date: 2008.02 to 2008.04
+    url: https://2draw.net/
     tech:
       - php
       - mysql
@@ -230,8 +249,9 @@ projects:
   2drawtvmobile:
     name: 2draw.tv mobile
     type: mobile
-    status: released beta
+    status: released alpha
     date: 2015.08 to 2017.12
+    url: https://watch.2draw.tv/
     tech:
       - reactnative
       - firebase
@@ -250,6 +270,7 @@ projects:
     name: Ambidextrous Magazine
     type: design
     date: 2006.08 to 2010.05
+    url: https://web.archive.org/web/20070831221019/http://www.ambidextrousmag.org:80/
     place: stanford
     tech:
       - indesign
@@ -258,38 +279,92 @@ projects:
     type: library
     status: unreleased
     date: 2006 to 2009
+    url: http://alt.cellosoft.com
     tech:
       - php
       - java
       - rhino
-  cellosoftcom:
-    name: cellosoft.com
+  arkitgame:
+    name: ARKit Game
+    type: game
+    status: unreleased
+    date: 2018.06
+    tech:
+      - swift
+      - iphone
+      - arkit
+  cellosoftcom1:
+    name: cellosoft.com v1
     type: web
-    status: launched 1999
-    date: 1999 to 2002
+    date: 1999.06 to 2000.02
     tech:
       - php
       - mysql
+  cellosoftcom2:
+    name: cellosoft.com v2
+    type: web
+    date: 2000.09 to 2002.06
+    url: https://web.archive.org/web/20020926220208/http://www.cellosoft.com:80/
+    tech:
+      - php
+      - mysql
+  cellosoftcom3:
+    name: cellosoft.com v3
+    type: web
+    date: 2002.10 to 2002.12
+    url: https://web.archive.org/web/20071227181853/http://www.cellosoft.com:80/
+    tech:
+      - php
+      - mysql
+  cellosoftcom4:
+    name: cellosoft.com v4
+    type: web
+    date: 2008.01 to 2008.01
+    url: http://cellosoft.com/
+    tech:
+      - html
   clickextensions:
     name: Misc Click & Create extensions
     type: library
     status: released various
     date: 1997.12 to 2001.08
+    url: https://web.archive.org/web/20081023180159/cellosoft.com/extensions
     tech:
       - cpp
+  descript:
+    name: Descript
+    type: app
+    status: released
+    date: 2018.09 to 2018.12
+    place: descript
+    tech:
+      - react
+      - electron
+      - redux
   firestarter:
     name: Firestarter
     type: game
     status: released
     date: 2005.08 to 2005.08
+    url: https://github.com/marcello3d/firestarter
     tech:
       - allegro
       - cpp
+  frondster:
+    name: Frondster.com
+    type: web
+    status: launched May 2018
+    date: 2018.05 to 2018.06
+    url: https://frondster.com/
+    tech:
+      - nodejs
+      - sqlite
   ilikeprocessing:
     name: I LIKE PROCESSING
     type: art
     status: released
     date: 2004.09.10 to 2006.05.09
+    url: https://web.archive.org/web/20101029202045/http://www.cs.unm.edu/~cello/processing/
     tech:
       - java
       - processing
@@ -298,6 +373,7 @@ projects:
     type: library
     status: released
     date: 2003.12 to 2004.01
+    url: https://web.archive.org/web/20130509082207/http://www.cs.unm.edu/~cello/jsgen/
     tech:
       - spidermonkey
       - cpp
@@ -307,6 +383,7 @@ projects:
     status: released
     date: 2002.08 to 2005.05.24
     place: 2draw
+    url: http://jtablet.cellosoft.com/
     tech:
       - java
       - cpp
@@ -317,6 +394,7 @@ projects:
     status: released alpha
     date: 2009.02 to 2012.03
     place: 2draw
+    url: http://jtablet.cellosoft.com/alpha.html
     tech:
       - java
       - cpp
@@ -346,6 +424,7 @@ projects:
     type: art
     status: released
     date: 2004.11.01 - 2004.11.11
+    url: https://web.archive.org/web/20090329155558/http://www.cs.unm.edu/~cello/livingescher/
     tech:
       - processing
   maya1:
@@ -401,6 +480,8 @@ projects:
     type: game
     status: released
     date: 2006.03.03 to 2006.03.06
+    url: https://tins.amarillion.org/2006/reviews/entry/62/
+    tech:
       - allegro
       - cpp
   mode7ex:
@@ -408,6 +489,7 @@ projects:
     type: library
     status: released
     date: 2001.09 to 2002.06
+    url: https://web.archive.org/web/20080711075514/http://mode7.cellosoft.com:80/
     tech:
       - cpp
   mongolian:
@@ -418,12 +500,31 @@ projects:
     tech:
       - nodejs
       - mongo
+  pocketdict:
+    name: PocketDict
+    type: mobile
+    status: released Mar 2003
+    date: 2003.02
+    url: https://web.archive.org/web/20071108202236/http://www.cellosoft.com:80/software/view.php?id=42
+    tech:
+      - pocketpc
+      - cpp
+  pocketww:
+    name: Pocket WaterWorks
+    type: mobile
+    status: released Mar 2003
+    date: 2003.03
+    url: https://web.archive.org/web/20071231170343/http://www.cellosoft.com:80/software/view.php?id=41
+    tech:
+      - pocketpc
+      - cpp
   siri1:
     name: Siri
     type: mobile
     status: released Feb 2010
     date: 2008.09 to 2010.04
     place: siri
+    url: https://web.archive.org/web/20100329060740/http://siri.com:80/
     tech:
       - android
       - iphone
@@ -436,6 +537,7 @@ projects:
     status: released Oct 2011
     date: 2010.05 to 2013.01
     place: apple
+    url: https://web.archive.org/web/20130321185857/http://www.apple.com/ios/siri/
     tech:
       - java
       - objectivec
@@ -445,6 +547,7 @@ projects:
     type: game
     status: released
     date: 2005.02 to 2005.02
+    url: https://tins.amarillion.org/2005/reviews/entry/35/
     tech:
       - allegro
       - cpp
@@ -454,6 +557,7 @@ projects:
     status: unreleased
     date: 2013.01 to 2016.09
     place: vivlabs
+    url: https://viv.ai/
     tech:
       - nodejs
       - java
@@ -461,11 +565,12 @@ projects:
       - electron
       - redux
   viv2:
-    name: Viv + IDE
+    name: Bixby IDE
     type: app
-    status: alpha
+    status: released Nov 2018
     date: 2016.10 to 2018.03
     place: samsung
+    url: https://bixbydevelopers.com
     tech:
       - nodejs
       - react

@@ -103,22 +103,28 @@ li {
     <h2>About</h2>
     <p>I code, draw, hack, and design. It's hard to say where one starts and the other ends.</p>
     <p>For the freshest, do check my <a href="https://github.com/marcello3d">github</a> and
+      {' '}
       <a href="http://twitter.com/marcello3d">twitter</a>.</p>
     <p>You can email me at marcello<code>@</code>cellosoft<code>.</code>com.</p>
     <p>Thanks for visiting!</p>
     <h2>Current projects</h2>
     <ul>
-      <li><a href="http://viv.ai/">viv.ai</a> — nlp/ai platform <span className="time">(since 2013)</span></li>
+      <li><a href="https://www.descript.com/">Descript</a> &mdash;
+        audio and video editing tools <span className="time">(since 2018)</span></li>
       <li><a href="http://2draw.net/">2draw.net</a> &mdash;
         online drawing tools + community
+        {' '}
         <small>(<a href="http://2draw.net/users/marcello/gallery/">my drawings</a>)</small>
+        {' '}
         <span className="time">(since 2002)</span></li>
 
-      <li><a href="https://npmjs.org/~marcello">various node.js modules</a> &mdash;
-        available via npm and github <span className="time">(since 2011)</span></li>
     </ul>
     <h2>Past projects</h2>
     <ul>
+      <li><a href="http://viv.ai/">viv.ai</a> / <a href="https://bixbydevelopers.com/">Bixby Developer Studio</a> —
+        nlp/ai platform <span className="time">(2013 - 2018)</span></li>
+      <li><a href="https://npmjs.org/~marcello">various node.js modules</a> {' '}
+        <span className="time">(2011 - 2016)</span></li>
       <li><a href="https://github.com/marcello3d/node-mongolian">Mongolian DeadBeef</a> &mdash;
         mongodb driver for node.js <span className="time">(2011 to 2012)</span></li>
       <li><a href="http://www.siri.com">Siri</a> — virtual personal assistant <span className="time">(2008 to 2012)</span>
@@ -143,6 +149,7 @@ li {
       <li><a href="https://web.archive.org/web/20070527173519/http://www.cs.unm.edu/~cello/maya/readme.html"
              className="unavailable">maya</a> &mdash;
         collection of computer animations (also <a href="http://www.youtube.com/user/marcello3d/videos">on youtube</a>)
+        {' '}
         <span className="time">(2002 to 2004)</span></li>
       <li><a href="https://web.archive.org/web/20130509082207/http://www.cs.unm.edu/~cello/jsgen/"
              className="unavailable">jsgen</a> &mdash;

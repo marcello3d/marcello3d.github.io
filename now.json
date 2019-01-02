@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "type": "static",
+  "name": "marcello-cellosoft",
+  "files": [ "out/" ],
+  "alias": [
+    "marcello.cellosoft.com"
+  ],
+  "static": {
+    "public": "out",
+    "directoryListing": false
+  }
+}
