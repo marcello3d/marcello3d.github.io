@@ -1,0 +1,36 @@
+{
+  "name": "marcello.cellosoft.com",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:marcello3d/marcello3d.github.io.git",
+  "author": "Marcello Bastea-Forte <marcello@cellosoft.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fortawesome/fontawesome": "1.2.0-6",
+    "@fortawesome/fontawesome-free-brands": "5.1.0-3",
+    "@fortawesome/fontawesome-pro": "5.13.1",
+    "@fortawesome/fontawesome-pro-light": "5.1.0-3",
+    "@fortawesome/fontawesome-pro-regular": "5.1.0-3",
+    "@fortawesome/fontawesome-pro-solid": "5.1.0-3",
+    "@fortawesome/fontawesome-svg-core": "1.2.29",
+    "@fortawesome/free-solid-svg-icons": "5.13.1",
+    "@fortawesome/react-fontawesome": "0.1.11",
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build"
+  },
+  "devDependencies": {
+    "csv-parse": "4.10.1",
+    "js-yaml": "3.14.0",
+    "json-loader": "0.5.7",
+    "prettier": "2.0.5",
+    "serve": "11.3.2",
+    "yaml-loader": "0.6.0"
+  }
+}

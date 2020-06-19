@@ -1,2 +1,8 @@
 .idea/misc.xml
 .idea/workspace.xml
+data/*.json
+.next/
+node_modules/
+out/
+
+.vercel

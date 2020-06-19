@@ -1,0 +1,588 @@
+
+technologies:
+  allegro:
+    name: Allegro
+    date: 2001 to 2007
+  android:
+    name: Android
+    date: 2009.11 to 2010.04
+  arkit:
+    name: ARKit
+  cpp:
+    name: C++
+    date: 2001 to 2008
+  clickandcreate:
+    name: Click and Create
+    date: 1996 to 1998
+  electron:
+    name: Electron
+    date: 2016.07 to present
+  engineio:
+    name: engine.io
+    date: 2013.01 to 2015
+  firebase:
+    name: Firebase
+    date: 2016.02 to 2017.11
+  flex:
+    name: Flex
+    date: 2007 to 2007
+  glshaderlanguage:
+    name: GL Shader Language
+    date: 2015.12 to 2016.04
+  grpc:
+    name: gRPC
+    date: 2017.10 to 2018.03
+  html:
+    name: HTML
+    date: 1996 to present
+  iosdevelopment:
+    name: iOS Development
+    date: 2009.11 to 2013.01
+  java:
+    name: Java
+    date: 2000 to 2017
+  applet:
+    name: Java Applet
+    date: 2000 to 2008
+  javascript:
+    name: JavaScript
+    date: 1996 to present
+  jni:
+    name: JNI
+  java2d:
+    name: Java2D
+  jest:
+    name: Jest
+    date: 2016.08 to present
+  klikplay:
+    name: klik & play
+    date: 1995.12 to 1996
+  metalsmith:
+    name: Metalsmith
+    date: 2017.02 to 2017.05
+  mongo:
+    name: MongoDB
+    date: 2010.11 to 2012
+  multimediafusion:
+    name: multimedia fusion
+    date: 1998 to 2001
+  mysql:
+    name: MySQL
+    date: 1999 to 2006
+  nextjs:
+    name: Next.js
+    date: 2017.06 to present
+  nodejs:
+    name: Node.js
+    date: 2010? to present
+  objectivec:
+    name: Objective-C
+  opengl:
+    name: OpenGL
+    date: 2005 to 2008
+  opencv:
+    name: OpenCV
+  parse:
+    name: Parse
+    date: 2015.11 to 2016.02
+  perl:
+    name: Perl
+    date: 1998? to 1998?
+  php:
+    name: PHP
+    date: 1999 to 2008
+  playframework:
+    name: Play framework
+    date: 2010.10 to 2011.02
+  pocketpc:
+    name: PocketPC
+    date: 2003.01 to 2003.12
+  postgres:
+    name: Postgres
+    date: 2014.11 to 2015
+  processing:
+    name: Processing
+    date: 2004 to 2006
+  react:
+    name: React
+    date: 2015.02 to present
+  reactnative:
+    name: React Native
+    date: 2015.09 to 2018.06
+  redux:
+    name: Redux
+    date: July 2016 to present
+  rhino:
+    name: Rhino
+    date: 2006 to 2016
+  scala:
+    name: Scala
+    date: 2010.10 to 2011.02
+  socketio:
+    name: socket.io
+    date: 2011.02 to 2013.01
+  spidermonkey:
+    name: SpiderMonkey
+    date: 2004 to 2004
+  sqlite:
+    name: SQLite
+  swift:
+    name: Swift
+  typescript:
+    name: TypeScript
+    date: 2017.08 to present
+  webgl:
+    name: WebGL
+    date: 2015.12 to 2016.04
+  aftereffects:
+    name: After Effects
+    date: 2002 to 2004
+  fireworks:
+    name: Fireworks
+    date: 1999? to 2003?
+  flash:
+    name: Flash
+    date: 2007? to 2007?
+  iphone:
+    name: iPhone
+    date: 2008.09 to 2018.09
+  lightroom:
+    name: Lightroom
+    date: 2008 to 2015
+  macos:
+    name: Mac OS
+    date: 2007 to present
+  maya:
+    name: Maya
+    date: 2002 to 2004
+  photoshop:
+    name: Photoshop
+    date: 2001 to 2015
+  sketch:
+    name: Sketch
+    date: 2014? to 2017
+  windows:
+    name: Windows
+    date: 1995 to 2008
+  indesign:
+    name: InDesign
+    date: 2007 to 2008.12
+places:
+  2draw:
+    name: 2draw
+    date: 2002.03 to present
+  apple:
+    name: Apple
+    date: 2010.04 to 2013.01
+  cellosoft:
+    name: cellosoft
+    date: 1996 to present
+  descript:
+    name: Descript Inc
+    date: 2018.09 to present
+  samsung:
+    name: Samsung
+    date: 2016.10 to 2018.03
+  siri:
+    name: Siri Inc
+    date: 2008.09 to 2010.04
+  stanford:
+    name: Stanford
+    date: 2006.09 to 2008.06
+  unm:
+    name: UNM
+    date: 2001.08 to 2006.05
+  vivlabs:
+    name: Viv Labs
+    date: 2013.01 to 2018.03
+  yrb:
+    name: YRB
+    date: 2007.06 to 2007.09
+projects:
+  2drawscala:
+    name: 2draw (scala)
+    type: web
+    status: unreleased
+    date: 2010.10 to 2011.01
+    tech:
+      - java
+      - scala
+      - playframework
+  2drawbook:
+    name: 2draw book
+    type: design
+    status: released Oct 2008
+    date: 2007.10 to 2008.12
+    url: http://www.blurb.com/b/428407-2draw-digital-art-showcase
+    tech:
+      - indesign
+  2draw:
+    name: 2draw (1.0)
+    type: web
+    status: launched Apr 2002
+    date: 2002.03 to 2002.11
+    url: https://web.archive.org/web/20021201144836/http://cellosoft.com:80/2draw/
+    tech:
+      - php
+      - mysql
+      - applet
+  2drawnet2:
+    name: 2draw.net (2.0)
+    type: web
+    status: launched Aug 2003
+    url: https://web.archive.org/web/20041204052224/http://cellosoft.com:80/2draw/
+    date: 2002.12 to 2006.06
+    tech:
+      - php
+      - mysql
+      - applet
+  2drawnet25:
+    name: 2draw.net (2.5)
+    type: web
+    status: released Apr 2008
+    date: 2008.02 to 2008.04
+    url: https://2draw.net/
+    tech:
+      - php
+      - mysql
+      - applet
+  2drawtvmobile:
+    name: 2draw.tv mobile
+    type: mobile
+    status: released alpha
+    date: 2015.08 to 2017.12
+    url: https://watch.2draw.tv/
+    tech:
+      - reactnative
+      - firebase
+  2drawtvweb:
+    name: 2draw.tv
+    type: web
+    status: alpha
+    date: 2011.02 to 2015.07
+    tech:
+      - nodejs
+      - mongo
+      - parse
+      - socketio
+      - engineio
+  ambidextrous:
+    name: Ambidextrous Magazine
+    type: design
+    date: 2006.08 to 2010.05
+    url: https://web.archive.org/web/20070831221019/http://www.ambidextrousmag.org:80/
+    place: stanford
+    tech:
+      - indesign
+  altframework:
+    name: Alt Framework
+    type: library
+    status: unreleased
+    date: 2006 to 2009
+    url: http://alt.cellosoft.com
+    tech:
+      - php
+      - java
+      - rhino
+  arkitgame:
+    name: ARKit Game
+    type: game
+    status: unreleased
+    date: 2018.06
+    tech:
+      - swift
+      - iphone
+      - arkit
+  cellosoftcom1:
+    name: cellosoft.com v1
+    type: web
+    date: 1999.06 to 2000.02
+    tech:
+      - php
+      - mysql
+  cellosoftcom2:
+    name: cellosoft.com v2
+    type: web
+    date: 2000.09 to 2002.06
+    url: https://web.archive.org/web/20020926220208/http://www.cellosoft.com:80/
+    tech:
+      - php
+      - mysql
+  cellosoftcom3:
+    name: cellosoft.com v3
+    type: web
+    date: 2002.10 to 2002.12
+    url: https://web.archive.org/web/20071227181853/http://www.cellosoft.com:80/
+    tech:
+      - php
+      - mysql
+  cellosoftcom4:
+    name: cellosoft.com v4
+    type: web
+    date: 2008.01 to 2008.01
+    url: http://cellosoft.com/
+    tech:
+      - html
+  clickextensions:
+    name: Misc Click & Create extensions
+    type: library
+    status: released various
+    date: 1997.12 to 2001.08
+    url: https://web.archive.org/web/20081023180159/cellosoft.com/extensions
+    tech:
+      - cpp
+  descript:
+    name: Descript
+    type: app
+    status: released
+    date: 2018.09 to 2020.06
+    place: descript
+    tech:
+      - react
+      - electron
+      - redux
+  firestarter:
+    name: Firestarter
+    type: game
+    status: released
+    date: 2005.08 to 2005.08
+    url: https://github.com/marcello3d/firestarter
+    tech:
+      - allegro
+      - cpp
+  frondster:
+    name: Frondster.com
+    type: web
+    status: launched May 2018
+    date: 2018.05 to 2018.06
+    url: https://frondster.com/
+    tech:
+      - nodejs
+      - sqlite
+  ilikeprocessing:
+    name: I LIKE PROCESSING
+    type: art
+    status: released
+    date: 2004.09.10 to 2006.05.09
+    url: https://web.archive.org/web/20101029202045/http://www.cs.unm.edu/~cello/processing/
+    tech:
+      - java
+      - processing
+  jsgen:
+    name: jsgen
+    type: library
+    status: released
+    date: 2003.12 to 2004.01
+    url: https://web.archive.org/web/20130509082207/http://www.cs.unm.edu/~cello/jsgen/
+    tech:
+      - spidermonkey
+      - cpp
+  jtablet:
+    name: JTablet 1
+    type: library
+    status: released
+    date: 2002.08 to 2005.05.24
+    place: 2draw
+    url: http://jtablet.cellosoft.com/
+    tech:
+      - java
+      - cpp
+      - jni
+  jtablet2:
+    name: JTablet 2
+    type: library
+    status: released alpha
+    date: 2009.02 to 2012.03
+    place: 2draw
+    url: http://jtablet.cellosoft.com/alpha.html
+    tech:
+      - java
+      - cpp
+      - jni
+      - objectivec
+  lascauxsketch:
+    name: Lascaux Sketch
+    type: web
+    status: released Jan 2003
+    date: 2002.06 to 2008
+    place: 2draw
+    tech:
+      - java
+      - applet
+  lascaux2:
+    name: Lascaux 2
+    type: web
+    status: unreleased
+    date: 2008.01 to 2009.08
+    place: 2draw
+    tech:
+      - java
+      - java2d
+      - applet
+  lascauxsketch2:
+    name: Lascaux Sketch 2
+    type: web
+    status: released
+    date: 2018.01 to 2020.06
+    url: https://lascaux.studio
+    place: 2draw
+    tech:
+      - webgl
+      - typescript
+  livingescher:
+    name: Living Escher
+    type: art
+    status: released
+    date: 2004.11.01 - 2004.11.11
+    url: https://web.archive.org/web/20090329155558/http://www.cs.unm.edu/~cello/livingescher/
+    tech:
+      - processing
+  maya1:
+    name: Space Slicer Unlimited
+    type: film
+    status: released
+    date: 2002.10 to 2002.12
+    place: unm
+    tech:
+      - maya
+      - photoshop
+  maya2:
+    name: Inkwell
+    type: film
+    status: released
+    date: 2003.02 to 2002.05
+    place: unm
+    tech:
+      - maya
+      - photoshop
+  maya3:
+    name: A Pirate's Tale
+    type: film
+    status: released
+    date: 2003.06 to 2003.08
+    place: unm
+    tech:
+      - maya
+      - photoshop
+      - flash
+      - aftereffects
+  maya4:
+    name: Journey
+    type: film
+    status: released
+    date: 2004.02 to 2004.05
+    place: unm
+    tech:
+      - maya
+      - photoshop
+      - aftereffects
+  mixednuts:
+    name: Mixed Nuts
+    type: game
+    date: 2007.02 - 2007.04
+    place: stanford
+    tech:
+      - cpp
+      - opengl
+      - opencv
+  megaman3vil:
+    name: Megaman 3vil
+    type: game
+    status: released
+    date: 2006.03.03 to 2006.03.06
+    url: https://tins.amarillion.org/2006/reviews/entry/62/
+    tech:
+      - allegro
+      - cpp
+  mode7ex:
+    name: Mode7 Extension
+    type: library
+    status: released
+    date: 2001.09 to 2002.06
+    url: https://web.archive.org/web/20080711075514/http://mode7.cellosoft.com:80/
+    tech:
+      - cpp
+  mongolian:
+    name: Mongolian Deadbeef
+    type: library
+    status: released
+    date: 2011.03.02 to 2012.03.25
+    tech:
+      - nodejs
+      - mongo
+  pocketdict:
+    name: PocketDict
+    type: mobile
+    status: released Mar 2003
+    date: 2003.02
+    url: https://web.archive.org/web/20071108202236/http://www.cellosoft.com:80/software/view.php?id=42
+    tech:
+      - pocketpc
+      - cpp
+  pocketww:
+    name: Pocket WaterWorks
+    type: mobile
+    status: released Mar 2003
+    date: 2003.03
+    url: https://web.archive.org/web/20071231170343/http://www.cellosoft.com:80/software/view.php?id=41
+    tech:
+      - pocketpc
+      - cpp
+  siri1:
+    name: Siri
+    type: mobile
+    status: released Feb 2010
+    date: 2008.09 to 2010.04
+    place: siri
+    url: https://web.archive.org/web/20100329060740/http://siri.com:80/
+    tech:
+      - android
+      - iphone
+      - php
+      - java
+      - javascript
+  siri2:
+    name: Siri
+    type: mobile
+    status: released Oct 2011
+    date: 2010.05 to 2013.01
+    place: apple
+    url: https://web.archive.org/web/20130321185857/http://www.apple.com/ios/siri/
+    tech:
+      - java
+      - objectivec
+      - iphone
+  trollhunter:
+    name: Troll Hunter
+    type: game
+    status: released
+    date: 2005.02 to 2005.02
+    url: https://tins.amarillion.org/2005/reviews/entry/35/
+    tech:
+      - allegro
+      - cpp
+  viv1:
+    name: Viv + IDE
+    type: app
+    status: unreleased
+    date: 2013.01 to 2016.09
+    place: vivlabs
+    url: https://viv.ai/
+    tech:
+      - nodejs
+      - java
+      - react
+      - electron
+      - redux
+  viv2:
+    name: Bixby IDE
+    type: app
+    status: released Nov 2018
+    date: 2016.10 to 2018.03
+    place: samsung
+    url: https://bixbydevelopers.com
+    tech:
+      - nodejs
+      - react
+      - electron
+      - redux
