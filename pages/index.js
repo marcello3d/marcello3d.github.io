@@ -111,10 +111,12 @@ li {
     <ul>
       <li><a href="https://www.descript.com/">Descript</a> &mdash;
         audio and video editing tools <span className="time">(since 2018)</span></li>
-      <li><a href="http://2draw.net/">2draw.net</a> &mdash;
+      <li><a href="https://lascaux.studio/">lascaux sketch 2</a> &mdash; open source webgl drawing app{' '}
+        <span className="time">(since 2014)</span></li>
+      <li><a href="https://2draw.net/">2draw.net</a> &mdash;
         online drawing tools + community
         {' '}
-        <small>(<a href="http://2draw.net/users/marcello/gallery/">my drawings</a>)</small>
+        <small>(<a href="https://2draw.net/users/marcello/gallery/">my drawings</a>)</small>
         {' '}
         <span className="time">(since 2002)</span></li>
 
