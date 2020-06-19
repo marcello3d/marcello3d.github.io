@@ -4,5 +4,6 @@ data/*.json
 .next/
 node_modules/
 out/
+.npmrc
 
 .vercel
