@@ -335,7 +335,7 @@ projects:
     name: Descript
     type: app
     status: released
-    date: 2018.09 to 2018.12
+    date: 2018.09 to 2020.06
     place: descript
     tech:
       - react
@@ -419,6 +419,16 @@ projects:
       - java
       - java2d
       - applet
+  lascauxsketch2:
+    name: Lascaux Sketch 2
+    type: web
+    status: released
+    date: 2018.01 to 2020.06
+    url: https://lascaux.studio
+    place: 2draw
+    tech:
+      - webgl
+      - typescript
   livingescher:
     name: Living Escher
     type: art
