@@ -29,6 +29,9 @@ technologies:
   glshaderlanguage:
     name: GL Shader Language
     date: 2015.12 to 2016.04
+  graphql:
+    name: GraphQL
+    date: 2020.08 to 2021.01
   grpc:
     name: gRPC
     date: 2017.10 to 2018.03
@@ -241,6 +244,7 @@ projects:
     type: web
     status: released Apr 2008
     date: 2008.02 to 2008.04
+    place: 2draw
     url: https://2draw.net/
     tech:
       - php
@@ -251,6 +255,7 @@ projects:
     type: mobile
     status: released alpha
     date: 2015.08 to 2017.12
+    place: 2draw
     url: https://watch.2draw.tv/
     tech:
       - reactnative
@@ -260,12 +265,23 @@ projects:
     type: web
     status: alpha
     date: 2011.02 to 2015.07
+    place: 2draw
     tech:
       - nodejs
       - mongo
       - parse
       - socketio
       - engineio
+  2drawink:
+    name: 2draw.ink
+    type: web
+    status: pre-alpha
+    date: 2020.12 to 2021.02
+    place: 2draw
+    tech:
+      - nodejs
+      - react
+      - graphql
   ambidextrous:
     name: Ambidextrous Magazine
     type: design
@@ -335,12 +351,15 @@ projects:
     name: Descript
     type: app
     status: released
-    date: 2018.09 to 2020.06
+    date: 2018.09 to 2021.02
     place: descript
+    url: https://www.descript.com
     tech:
       - react
       - electron
       - redux
+      - webgl
+      - webaudio
   firestarter:
     name: Firestarter
     type: game
@@ -359,6 +378,17 @@ projects:
     tech:
       - nodejs
       - sqlite
+  graphql98:
+    name: GraphQL '98
+    type: app
+    status: released
+    date: 2020.08 to 2020.12
+    url: https://github.com/marcello3d/graphql-98
+    tech:
+      - nodejs
+      - react
+      - electron
+      - graphql
   ilikeprocessing:
     name: I LIKE PROCESSING
     type: art
@@ -423,12 +453,13 @@ projects:
     name: Lascaux Sketch 2
     type: web
     status: released
-    date: 2018.01 to 2020.06
+    date: 2018.01 to 2021.02
     url: https://lascaux.studio
     place: 2draw
     tech:
       - webgl
       - typescript
+      - react
   livingescher:
     name: Living Escher
     type: art
@@ -552,6 +583,14 @@ projects:
       - java
       - objectivec
       - iphone
+  trimerge:
+    name: Trimerge
+    type: library
+    status: released
+    date: 2019.01 to 2020.09
+    url: https://github.com/marcello3d/trimerge
+    tech:
+      - typescript
   trollhunter:
     name: Troll Hunter
     type: game
