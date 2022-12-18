@@ -351,7 +351,7 @@ projects:
     name: Descript
     type: app
     status: released
-    date: 2018.09 to 2021.02
+    date: 2018.09 to 2022.12
     place: descript
     url: https://www.descript.com
     tech:
@@ -587,8 +587,16 @@ projects:
     name: Trimerge
     type: library
     status: released
-    date: 2019.01 to 2020.09
+    date: 2019.01 to 2020.04
     url: https://github.com/marcello3d/trimerge
+    tech:
+      - typescript
+  trimergesync:
+    name: Trimerge Sync
+    type: library
+    status: released
+    date: 2020.09 to 2021.12
+    url: https://github.com/marcello3d/trimerge-sync
     tech:
       - typescript
   trollhunter:
