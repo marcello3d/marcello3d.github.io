@@ -1,4 +1,4 @@
-import { FontAwesomeIcon }from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import faPalette from '@fortawesome/free-solid-svg-icons/faPalette'
 import faFilm from '@fortawesome/fontawesome-pro-solid/faFilm'
@@ -10,8 +10,8 @@ import faMobileAlt from '@fortawesome/fontawesome-pro-solid/faMobileAlt'
 import faDesktop from '@fortawesome/fontawesome-pro-solid/faDesktop'
 import faMousePointer from '@fortawesome/fontawesome-pro-solid/faMousePointer'
 
-import {props} from '../src/gantt-data'
-import {getPlace, getTechnology} from '../src/gantt-utils'
+import { props } from '../src/gantt-data'
+import { getPlace, getTechnology } from '../src/gantt-utils'
 
 function getIcon(type) {
   switch (type) {
@@ -48,7 +48,7 @@ const MONTHS = {
   9: 'Sep',
   10: 'Oct',
   11: 'Nov',
-  12: 'Dec'
+  12: 'Dec',
 }
 
 function formatDate({ year, month }) {
@@ -81,80 +81,85 @@ function Project({
 }) {
   return (
     <div className={`project ${type}`}>
-      <style jsx>{/*language=CSS*/ `
-        .project {
-          display: flex;
-          flex-direction: column;
-          justify-content: stretch;
-          flex-grow: 1;
-          height: 100%;
-          padding: 8px 10px;
-          width: 10em;
-          background: #adb8d4;
-          border-radius: 4px;
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
+      <style jsx>{
+        /*language=CSS*/ `
+          .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            flex-grow: 1;
+            height: 100%;
+            padding: 8px 10px;
+            width: 10em;
+            background: #adb8d4;
+            border-radius: 4px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+          }
 
-        .project .name a {
-          color: #000;
-        }
+          .project .name a {
+            color: #000;
+          }
 
-        .content {
-          flex-grow: 1;
-        }
+          .content {
+            flex-grow: 1;
+          }
 
-        .date,
-        .details {
-          font-size: 80%;
-        }
+          .date,
+          .details {
+            font-size: 80%;
+          }
 
-        .type {
-          background: #c9c9c9;
-          color: #fff;
-          display: inline-block;
-          font-weight: bold;
-          padding: 2px 4px 3px;
-          border-radius: 6px;
-          font-size: 80%;
-        }
+          .type {
+            background: #c9c9c9;
+            color: #fff;
+            display: inline-block;
+            font-weight: bold;
+            padding: 2px 4px 3px;
+            border-radius: 6px;
+            font-size: 80%;
+          }
 
-        .art {
-          background: #00cac2;
-        }
+          .art {
+            background: #00cac2;
+          }
 
-        .film {
-          background: #c3c3c3;
-        }
+          .film {
+            background: #c3c3c3;
+          }
 
-        .design {
-          background: #e34e85;
-        }
+          .design {
+            background: #e34e85;
+          }
 
-        .web {
-          background: #f39a00;
-        }
+          .web {
+            background: #f39a00;
+          }
 
-        .game {
-          background: #d597ff;
-        }
+          .game {
+            background: #d597ff;
+          }
 
-        .library {
-          background: #4dd188;
-        }
+          .library {
+            background: #4dd188;
+          }
 
-        .app {
-          background: #4f88ff;
-        }
+          .app {
+            background: #4f88ff;
+          }
 
-        .mobile {
-          background: #99aeff;
-        }
-      `}</style>
+          .mobile {
+            background: #99aeff;
+          }
+        `
+      }</style>
       <div className="date">
-        <FontAwesomeIcon icon={getIcon(type)} /> {formatDates(startDate, endDate)}
+        <FontAwesomeIcon icon={getIcon(type)} />{' '}
+        {formatDates(startDate, endDate)}
       </div>
       <div className="header">
-        <strong className="name">{ url ? <a href={url}>{name}</a> : name}</strong>
+        <strong className="name">
+          {url ? <a href={url}>{name}</a> : name}
+        </strong>
         {place && ` @ ${getPlace(places, place).name}`}
       </div>
       {status !== 'released' && (
@@ -172,45 +177,47 @@ export async function getStaticProps() {
   return { props }
 }
 
-export default ({yearMonths, places, technologies }) => (
+export default ({ yearMonths, places, technologies }) => (
   <div id="content">
-    <style global jsx>{/*language=CSS*/ `
-      html {
-        font-family: 'Pontano Sans', 'Helvetica Neue', Helvetica, Arial,
-          sans-serif;
-        color: #000;
-        background: #fff;
-        font-size: 12pt;
-      }
+    <style global jsx>{
+      /*language=CSS*/ `
+        html {
+          font-family: 'Pontano Sans', 'Helvetica Neue', Helvetica, Arial,
+            sans-serif;
+          color: #000;
+          background: #fff;
+          font-size: 12pt;
+        }
 
-      body {
-        max-width: 45em;
-        width: 100%;
-        margin: 0 auto;
-      }
-      .even-year {
-        background: #eee;
-      }
-      .year {
-        vertical-align: top;
-        font-weight: bold;
-      }
-      .month {
-        height: 5px;
-      }
-      table {
-        border-spacing: 1px;
-        border-collapse: collapse;
-      }
-      table td {
-        vertical-align: top;
-        margin: 0;
-      }
-      tr,
-      td {
-        height: 1px;
-      }
-    `}</style>
+        body {
+          max-width: 45em;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .even-year {
+          background: #eee;
+        }
+        .year {
+          vertical-align: top;
+          font-weight: bold;
+        }
+        .month {
+          height: 5px;
+        }
+        table {
+          border-spacing: 1px;
+          border-collapse: collapse;
+        }
+        table td {
+          vertical-align: top;
+          margin: 0;
+        }
+        tr,
+        td {
+          height: 1px;
+        }
+      `
+    }</style>
     <table>
       <tbody>
         {yearMonths.map(({ year, month, projects }) => {
@@ -232,7 +239,11 @@ export default ({yearMonths, places, technologies }) => (
                     1
                   }
                 >
-                  <Project {...project} places={places} technologies={technologies} />
+                  <Project
+                    {...project}
+                    places={places}
+                    technologies={technologies}
+                  />
                 </td>
               ))}
             </tr>
