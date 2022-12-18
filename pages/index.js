@@ -102,17 +102,17 @@ li {
     <h1>Marcello Bastéa-Forte</h1>
     <h2>About</h2>
     <p>I code, draw, hack, and design. It's hard to say where one starts and the other ends.</p>
-    <p>For the freshest, do check my <a href="https://github.com/marcello3d">github</a> and
+    <p>For the freshest, do check my <a rel="me" href="https://github.com/marcello3d">github</a>, <a rel="me" href="https://hci.social/@marcello3d">Mastodon</a>, and
       {' '}
-      <a href="http://twitter.com/marcello3d">twitter</a>.</p>
+      <a rel="me" href="http://twitter.com/marcello3d">twitter</a>.</p>
     <p>You can email me at marcello<code>@</code>cellosoft<code>.</code>com.</p>
     <p>Thanks for visiting!</p>
     <h2>Current projects</h2>
     <ul>
       <li><a href="https://www.descript.com/">Descript</a> &mdash;
         audio and video editing tools <span className="time">(since 2018)</span></li>
-      <li><a href="https://lascaux.studio/">lascaux sketch 2</a> &mdash; open source webgl drawing app{' '}
-        <span className="time">(since 2014)</span></li>
+      <li><a href="https://github.com/marcello3d/trimerge">trimerge</a> and <a href="https://github.com/marcello3d/trimerge-sync">trimerge-sync</a> &mdash;
+        live collaboration library <span className="time">(since 2019)</span></li>
       <li><a href="https://2draw.net/">2draw.net</a> &mdash;
         online drawing tools + community
         {' '}
@@ -120,6 +120,11 @@ li {
         {' '}
         <span className="time">(since 2002)</span></li>
 
+    </ul>
+    <h2>Less active projects</h2>
+    <ul>
+      <li><a href="https://lascaux.studio/">lascaux sketch 2</a> &mdash; open source webgl drawing app{' '}
+        <span className="time">(2014 - 2021)</span></li>
     </ul>
     <h2>Past projects</h2>
     <ul>

@@ -1,4 +1,3 @@
-import data from '../data/data.yaml'
 import { FontAwesomeIcon }from '@fortawesome/react-fontawesome'
 
 import faPalette from '@fortawesome/free-solid-svg-icons/faPalette'
@@ -11,76 +10,8 @@ import faMobileAlt from '@fortawesome/fontawesome-pro-solid/faMobileAlt'
 import faDesktop from '@fortawesome/fontawesome-pro-solid/faDesktop'
 import faMousePointer from '@fortawesome/fontawesome-pro-solid/faMousePointer'
 
-const MONTHS = {
-  1: 'Jan',
-  2: 'Feb',
-  3: 'Mar',
-  4: 'Apr',
-  5: 'May',
-  6: 'Jun',
-  7: 'Jul',
-  8: 'Aug',
-  9: 'Sep',
-  10: 'Oct',
-  11: 'Nov',
-  12: 'Dec'
-}
-
-function parseDate(dateString) {
-  const [year, month, day] = dateString.split('.').map((s) => parseInt(s, 10))
-  return { year, month, day }
-}
-
-let minYear = Infinity
-let maxYear = -Infinity
-
-function getPlace(place, orDefault = { name: place }) {
-  return data.places[place] || orDefault
-}
-
-function getTechnology(id, orDefault = { name: id }) {
-  return data.technologies[id] || orDefault
-}
-
-for (const project of Object.values(data.projects)) {
-  const { date, place, tech } = project
-  const [startDate, endDate] = String(date).split(/\s*-\s*|\sto\s|,/)
-  const start = parseDate(startDate)
-  const end = endDate ? parseDate(endDate) : start
-  if (start.year < minYear) {
-    minYear = start.year
-  }
-  if (end.year > maxYear) {
-    maxYear = end.year
-  }
-  project.startDate = start
-  project.endDate = end
-  if (place && !getPlace(place, false)) {
-    console.error(`${place} not specified in data.places`)
-  }
-  if (!tech) {
-    project.tech = []
-  } else {
-    for (const id of tech) {
-      if (!getTechnology(id, false)) {
-        console.error(`${id} not specified in data.tech`)
-      }
-    }
-  }
-}
-
-const yearMonths = []
-for (let year = maxYear; year >= minYear; year--) {
-  for (let month = 12; month >= 1; month--) {
-    yearMonths.push({
-      year,
-      month,
-      projects: Object.values(data.projects).filter(
-        ({ endDate }) => endDate.year === year && endDate.month === month
-      )
-    })
-  }
-}
+import {props} from '../src/gantt-data'
+import {getPlace, getTechnology} from '../src/gantt-utils'
 
 function getIcon(type) {
   switch (type) {
@@ -103,6 +34,21 @@ function getIcon(type) {
     default:
       return faMousePointer
   }
+}
+
+const MONTHS = {
+  1: 'Jan',
+  2: 'Feb',
+  3: 'Mar',
+  4: 'Apr',
+  5: 'May',
+  6: 'Jun',
+  7: 'Jul',
+  8: 'Aug',
+  9: 'Sep',
+  10: 'Oct',
+  11: 'Nov',
+  12: 'Dec'
 }
 
 function formatDate({ year, month }) {
@@ -129,7 +75,9 @@ function Project({
   startDate,
   endDate,
   place,
-  tech
+  tech,
+  places,
+  technologies,
 }) {
   return (
     <div className={`project ${type}`}>
@@ -207,7 +155,7 @@ function Project({
       </div>
       <div className="header">
         <strong className="name">{ url ? <a href={url}>{name}</a> : name}</strong>
-        {place && ` @ ${getPlace(place).name}`}
+        {place && ` @ ${getPlace(places, place).name}`}
       </div>
       {status !== 'released' && (
         <div className="date">
@@ -215,13 +163,16 @@ function Project({
         </div>
       )}
       <div className="details">
-        {tech.map((id) => getTechnology(id).name).join(', ')}
+        {tech.map((id) => getTechnology(technologies, id).name).join(', ')}
       </div>
     </div>
   )
 }
+export async function getStaticProps() {
+  return { props }
+}
 
-export default () => (
+export default ({yearMonths, places, technologies }) => (
   <div id="content">
     <style global jsx>{/*language=CSS*/ `
       html {
@@ -281,7 +232,7 @@ export default () => (
                     1
                   }
                 >
-                  <Project {...project} />
+                  <Project {...project} places={places} technologies={technologies} />
                 </td>
               ))}
             </tr>
